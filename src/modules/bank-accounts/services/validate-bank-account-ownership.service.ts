@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { BankAccountsRepository } from 'src/shared/database/repositories/bank-accounts.repositories';
 
 @Injectable()
-export class ValidateBankAccountOwnership {
+export class ValidateBankAccountOwnershipService {
   constructor(
     private readonly bankAccountsRepository: BankAccountsRepository,
   ) {}
@@ -13,7 +13,7 @@ export class ValidateBankAccountOwnership {
     });
 
     if (!isOwner) {
-      throw new NotFoundException('Bank accountn not found.');
+      throw new NotFoundException('Bank account not found.');
     }
   }
 }
