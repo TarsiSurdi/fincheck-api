@@ -10,7 +10,7 @@ yarn install
 
 ## Setup
 
-Make sure you provide a [PostgresSQL](https://www.postgresql.org/) database along with the necessary environment variables described in the `.env.example` file:
+Make sure you provide a [PostgreSQL](https://www.postgresql.org/) database along with the necessary environment variables described in the `.env.example` file:
 
 ```bash
 DATABASE_URL="postgresql://username:password@localhost:5432/fincheck?schema=public"
